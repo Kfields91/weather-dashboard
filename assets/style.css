@@ -1,6 +1,24 @@
 button.btn {
   background-color: steelblue;
 }
+.five-day {
+  background-color: rgb(57, 142, 238);
+  width: 150px;
+  display: inline-block;
+  margin: 10px;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.none {
+  background-color: transparent;
+}
 
 /* div.card {
   align-content: right;
