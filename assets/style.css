@@ -6,15 +6,19 @@ button.btn {
   width: 150px;
   display: inline-block;
   margin: 10px;
+  text-align: center;
 }
 .green {
   background-color: green;
+  float: left;
 }
 .yellow {
   background-color: yellow;
+  float: left;
 }
 .red {
   background-color: red;
+  float: left;
 }
 .none {
   background-color: transparent;

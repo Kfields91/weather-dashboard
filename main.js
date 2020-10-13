@@ -16,10 +16,11 @@ $(document).ready(function () {
 
     citiesList.push(citySearch);
     window.localStorage.setItem("citiesList", JSON.stringify(citiesList));
-    for (var i = 0; i < citiesList.length; i++) {
-      cityListAdd(citiesList[i]);
+    // for (var i = 0; i < citiesList.length; i++) {
+    //   cityListAdd(citiesList[i]);
       
-    }
+    // }
+    cityListAdd(citiesList[citiesList.length -1]);
     if (citiesList.length > 0) {
       cityWeatherData(citiesList[citiesList.length -1]);
 
@@ -32,6 +33,7 @@ $(document).ready(function () {
   
   function cityListAdd(citiesList){;
     var ulEl = $(".cities-list");
+    ulEl.empty();
     var cityName = $("<li>").text(citiesList);
     ulEl.append(cityName);
 
@@ -40,9 +42,10 @@ $(document).ready(function () {
     $("#day-forecast").empty();
     $(".five-day-forecast").empty();
     event.preventDefault(); 
-    cityListAdd(citiesList);   
+    var citySearch = $("#search-term").val();
+    cityListAdd($(this).text()); 
     cityWeatherData($(this).text());
-    console.log(citiesList.length);
+    console.log(citySearch);
     })
   function cityWeatherData(citySearch){
     const url = "https://api.openweathermap.org/data/2.5/weather?";
