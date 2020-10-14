@@ -23,7 +23,7 @@ button.btn {
 .none {
   background-color: transparent;
 }
-
-/* div.card {
-  align-content: right;
-} */
+li {
+  display: block;
+  padding: 10px;
+}
