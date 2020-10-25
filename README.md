@@ -1,6 +1,6 @@
 # Weather-Dashboard
 
-<img src="C:\Users\kelse\weather-dashboard\assets\img\weather-dashboard.PNG" alt="five day weather forecast">
+![weather-dashboard](https://user-images.githubusercontent.com/68616301/97096414-d5671800-1620-11eb-86cd-16ba3773ae98.PNG)
 
 ---
 ### Check the Forecast
